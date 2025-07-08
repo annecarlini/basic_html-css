@@ -1,0 +1,55 @@
+/* tag, classe ou id*/
+/* Estrutura do css:
+seleção do elemento fica dentro das chaves => { => regra: valor; } */
+
+
+/* Tudo que colocamos no body é definido para a página toda, exceto, quando existe itens que sobrepõe. ex: navbar abaixo */
+body {
+    font-family: Arial;
+    margin: 0; /* tira todas as margens da página // espaçamento externo */
+    padding: 0; /* tira todos os paddings da página */
+    background-color: #f2f2f2;
+    min-height: 100vh; /* vh é viewport height => ou seja 100% a altura da viewporto do navegador. se adequada a altura monitor que você utiliza*/
+}
+
+/* Todas as estilizações de links */
+a {
+    text-decoration: none; /* tira os sublinhados do link*/
+    color: #fff;
+}
+
+/* aqui colocamos o "." na frente porque estamos estilizando uma CLASS */
+.navbar {
+    background:#333;
+    color: #fff;
+    padding: 20px; /* espaçamento interno */
+}   
+
+/* .navbar é uma div e .container é outra div - uma está dentro da outra e // container especificio da navbar*/
+.navbar .container {
+    display: flex; /* posiciona elementos um do lado do outro */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* container genérico */
+.container {
+    max-width: 800px; /* largura máxima do container*/
+    margin: auto; /* centraliza no espaço que delimitamos, distribuindo igualmente o espaço para esquerda e direita. */
+}
+
+.logo {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Para colocar os links um do lado do outro */
+.nav-links {
+    display: flex; /* deixa um ao lado do outro*/
+    gap: 10px; /* espaçamento entre os links */
+}
+
+/* Vamos tirar os bullets da lista */
+.nav-links li {
+    list-style-type: none; /* tira o bullet */
+}
