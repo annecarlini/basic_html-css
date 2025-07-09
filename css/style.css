@@ -50,7 +50,6 @@ a {
     gap: 15px; /* espaçamento entre os links */
 }
 
-
 /* Vamos tirar os bullets da lista */
 .nav-links li {
     list-style-type: none; /* tira o bullet */
@@ -72,7 +71,7 @@ a {
     display: flex; /* Deixa as os "blocos" um ao lado do outro */
     border-radius: 5px;
     background-color: #fff;
-    margin-top: 20px; /* Essa margim vai fazer com que o "descole" 20px da nav-bar */
+    margin-top: 10px; /* Essa margim vai fazer com que o "descole" 20px da nav-bar */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     overflow: hidden; /* Colocamos isso porque a imagem do produto não estava com as bordas arrendodas por estar escondida da class pai*/
 }
@@ -117,14 +116,14 @@ a {
     background-color: #555; /* Quando passar o mouse em cima vai mudar o fundo de cor */
 }
 
-
 /* CSS DO RODAPÉ. */
 .footer {
+    margin-top: 10px;
     background-color: #333;
     color: #f2f2f2;
     text-align: center;
     padding: 10px;
-    position: fixed; /* Aqui colocamos ele me uma posição fixa na tela */
+    position: static; /* Aqui colocamos ele me uma posição fixa na tela */
     bottom: 0; /* Com o bottom 0 colocamos ele encostado no canto esquerdo */
     width: 100%; /* Aqui colocamos preenchendo a tela inteira no sentido horizontal */
 }
