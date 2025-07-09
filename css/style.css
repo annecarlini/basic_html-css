@@ -12,6 +12,7 @@ body {
     min-height: 100vh; /* vh é viewport height => ou seja 100% a altura da viewporto do navegador. se adequada a altura monitor que você utiliza*/
 }
 
+/* CSS DA NAV BAR */
 /* Todas as estilizações de links */
 a {
     text-decoration: none; /* tira os sublinhados do link*/
@@ -46,10 +47,84 @@ a {
 /* Para colocar os links um do lado do outro */
 .nav-links {
     display: flex; /* deixa um ao lado do outro*/
-    gap: 10px; /* espaçamento entre os links */
+    gap: 15px; /* espaçamento entre os links */
 }
+
 
 /* Vamos tirar os bullets da lista */
 .nav-links li {
     list-style-type: none; /* tira o bullet */
+}
+
+/* Aqui mexemos na estilização da letra da bav-links a*/
+.nav-links a {
+    color:#f2f2f2;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #555; /* Quando colocamos o hover, ele faz o efeito de passar o mouse e mudar de cor. nesse caso apenas a letra. */
+}
+
+/* CSS DOS PRODUTOS. */
+
+.product {
+    display: flex; /* Deixa as os "blocos" um ao lado do outro */
+    border-radius: 5px;
+    background-color: #fff;
+    margin-top: 20px; /* Essa margim vai fazer com que o "descole" 20px da nav-bar */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Colocamos isso porque a imagem do produto não estava com as bordas arrendodas por estar escondida da class pai*/
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Isso faz com que a imagem retangular se adapte ao quadrado que estamos criando de 200x200px */
+}
+
+.product-info {
+    padding: 20px;
+}
+
+.product-name {
+    font-size: 24px;
+    color:#333;
+    margin-top: 0px;
+}
+
+.product-description {
+    color: #666;
+}
+
+.product-price {
+    font-size: 18px;
+    color:#333;
+    font-weight: bold; /* Deixa em negrito o texto */
+}
+
+.product-button {
+    padding: 10px 20px; /* para cima e para baixo*/
+    border: none;
+    background-color: #333;
+    color: #f2f2f2; /* Color é sempre a cor da letra */
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.product-button:hover {
+    background-color: #555; /* Quando passar o mouse em cima vai mudar o fundo de cor */
+}
+
+
+/* CSS DO RODAPÉ. */
+.footer {
+    background-color: #333;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px;
+    position: fixed; /* Aqui colocamos ele me uma posição fixa na tela */
+    bottom: 0; /* Com o bottom 0 colocamos ele encostado no canto esquerdo */
+    width: 100%; /* Aqui colocamos preenchendo a tela inteira no sentido horizontal */
 }

@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="css/style.css"> <!-- linkando arquivo css -->
 </head>
 <body>
+<!-- Barra de navegação -->
     <div class="navbar">
         <div class="container">
             <a href="#" class="logo">UpStore</a> <!-- Quando colocamos o # é porque a página que irá ser direcionada não está pronta ou não tem mesmo-->
-            <u class="nav-links">
+            <ul class="nav-links">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -23,6 +24,30 @@
             </ul>
         </div>
     </div>
+    <!-- Exibição dos produtos -->
+    <div class="container">
+        <div class="product">
+            <img src="img/produto.jpg" 
+            alt="Imagem do produto. Relógio digital" 
+            class="product-image">
+            <div class="product-info">
+                <h1 class="product-name">Relógio Digital</h1>
+                <p class="product-description">
+                    Este relógio é excelente para quem deseja modernidade e estilo
+                </p>
+                <p class="product-price">R$99,99</p>
+                <!-- Formas de fazer o botão | com a => processa requisição no servidor 
+                 ou com button => processa requisição com javascript -->
+                 <button class="product-button">Comprar</button>
+            </div>
+        </div>
+    </div>
 
+    <!-- Rodapé -->
+     <div class="footer">
+        <div class="container">
+            <p>&copy; 2025 Projeto de estudos: Fundamentos básicos de HTML e CSS.   </p>
+        </div>
+     </div>
 </body>
 </html>
